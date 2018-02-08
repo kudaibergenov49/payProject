@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.InputController">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="0.0" prefWidth="451.0" GridPane.rowIndex="1" />
+        <Pane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <Label layoutX="38.0" layoutY="35.0" text="Текущая дата: " />
+                <Label fx:id="currentData" layoutX="228.0" layoutY="35.0" />
+                <Label layoutX="38.0" layoutY="100.0" text="Введите заметку: " />
+                <TextArea fx:id="yourNote" layoutX="228.0" layoutY="63.0" prefHeight="128.0" prefWidth="200.0" />
+                <Button fx:id="saveNoteButton" cancelButton="true" layoutX="18.0" layoutY="155.0" mnemonicParsing="false" onAction="#addNoteAction" text="Сохранить запись" />
+                <Button fx:id="backFWindow" cancelButton="true" layoutX="137.0" layoutY="155.0" mnemonicParsing="false" onAction="#backFWindow" text="К дневнику" />
+            </children>
+        </Pane>
+    </children>
+</GridPane>
